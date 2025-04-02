@@ -1,0 +1,129 @@
+/* Общие базовые стили */
+body {
+  background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Заголовки секций */
+.section-title {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2rem;
+  color: #00cc99;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Навигация */
+.navbar {
+  background: #3a3a3a;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #00cc99;
+}
+.navbar .navbar-brand .logo {
+  width: 120px;
+}
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.nav-buttons a.btn {
+  font-size: 1.2rem;
+  border: 1px solid #00cc99;
+  color: #00cc99;
+  padding: 0.7rem 1.2rem;
+  transition: background 0.3s, color 0.3s;
+}
+.nav-buttons a.btn:hover {
+  background: #00cc99;
+  color: #3a3a3a;
+}
+
+/* Основное содержимое */
+.main-content {
+  background: #3a3a3a;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(255, 0, 255, 0.3);
+  margin: 3rem auto;
+}
+
+/* Отступ между игровыми секциями */
+.game-section {
+  margin-bottom: 3rem;
+}
+
+/* Карточки игр с яркой малиновой обводкой */
+.game-card {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #ff00ff; /* ярко-малиновый */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 0, 255, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: #000;
+}
+.game-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(255, 0, 255, 0.5);
+}
+.game-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Заголовок карточки перенесён в нижнюю часть блока с темным фоном */
+.card-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+.card-title {
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  color: #00cc99;
+  width: 100%;
+}
+
+/* Ссылки на игры */
+.game-link {
+  text-decoration: none;
+}
+
+/* Футер */
+.footer {
+  background: #3a3a3a;
+  color: #f0f0f0;
+  padding: 2rem 0;
+  border-top: 1px solid #00cc99;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-icon {
+  width: 100px;
+}
+.footer-text p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
